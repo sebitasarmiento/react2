@@ -16,7 +16,7 @@ const Formulario = ({ setAlert }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (formData.nombre.trim() === "" || formData.email.trim() === "") {
+    if (formData.nombre.trim() === "" || formData.email.trim() === "" || formData.password.trim() === "") {
       setAlert({ type: "danger", message: "Por favor, ingresa tus datos" });
     } else if (!formData.email.includes("@")) {
       setAlert({ type: "danger", message: "Email incorrecto. Falta el símbolo @" });
@@ -24,6 +24,7 @@ const Formulario = ({ setAlert }) => {
       setAlert({ type: "success", message: "Registro exitoso" });
     } else {
       setAlert({ type: "danger", message: "Las contraseñas no coinciden" });
+     
     }
   };
 

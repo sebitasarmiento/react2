@@ -50,7 +50,6 @@
 .iconos{
   display: flex;
   justify-content: space-evenly;
-  font-weight: bolder;
 }
 .iconos .icon{
   border: 1px solid black;
